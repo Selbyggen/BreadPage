@@ -10,8 +10,6 @@ import cgi
 print "Content-type: text/html"
 print #end headers by printing an empty line
 
-background = "#FEDA86"
-
 #choose the backgroundcolor from ini
 fo = open("backgroundcolor.ini", "r")
 background = fo.read();
@@ -32,11 +30,8 @@ print "<center>"
 #put the text and picture a bit further down by cheating using <br>
 print "<br><br><br><br><br><br>"
 
-#insert the welcome text
-print "<img src='img/textWelcomeToBreadPage.png'><br>"
-#insert happy bread! with link to underdebelopment.py
-print "<a href='underDevelopment.py'><img src='img/thehappybread.jpg'></a><br>"
-#insert the click-to-enter text
-print "<img src='img/textClickToEnter.png'>"
+#insert the under development text
+print "<img src='img/textUnderDevelopment.png'><br>"
+
 
 print "</html>"
